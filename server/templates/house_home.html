@@ -1,0 +1,72 @@
+{% extends '_public/layouts.html' %}
+
+{% block content %}
+    <div class="house_container">
+        <div class="house_container--sub">
+            <div class="house__header">
+                <h2>Yashnil Houses</h2>
+            </div>
+            <div class="house__houses">
+                <div class="house__houses--items">
+
+                    <div class="houses__item">
+                        <div class="house__content">
+                            <div>
+                                <h5>Marthandam</h5>
+                                <h2>Home for sale</h2>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ipsam!</p>
+                                <a href="">view house</a>
+                            </div>
+                        </div>
+                        <img src="{{ url_for('static', filename="images/houses/house001.jpg") }}" alt="">
+                    </div>
+
+                    <div class="houses__item">
+                        <div class="house__content">
+                            <div>
+                                <h5>Marthandam</h5>
+                                <h2>Home for sale</h2>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ipsam!</p>
+                                <a href="">view house</a>
+                            </div>
+                        </div>
+                        <img src="{{ url_for('static', filename="images/houses/house002.jpg") }}" alt="">
+                    </div>
+
+                    <div class="houses__item">
+                        <div class="house__content">
+                            <div>
+                                <h5>Marthandam</h5>
+                                <h2>Home for sale</h2>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ipsam!</p>
+                                <a href="">view house</a>
+                            </div>
+                        </div>
+                        <img src="{{ url_for('static', filename="images/houses/house003.jpg") }}" alt="">
+                    </div>
+
+                    <div class="houses__item">
+                        <div class="house__content">
+                            <div>
+                                <h5>Marthandam</h5>
+                                <h2>Home for sale</h2>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ipsam!</p>
+                                <a href="">view house</a>
+                            </div>
+                        </div>
+                        <img src="{{ url_for('static', filename="images/houses/house004.jpg") }}" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

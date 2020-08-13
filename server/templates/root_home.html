@@ -1,0 +1,75 @@
+{% extends '_public/layouts.html' %}
+
+{% block content %}
+    <div class="root_home">
+        <div class="slider_container">
+            {% include 'home/slider.html' %}
+        </div>
+        <div class="root_about">
+            <h2>About Yashnil Group</h2>
+            <p>Take a deep dive and browse original neighborhood photos, drone footage, resident reviews and local insights to see if the homes for sale are right for you.</p>
+            <p>Take a deep dive and browse original neighborhood photos, drone footage, resident reviews and local insights to see if the homes for sale are right for you. Take a deep dive and browse original neighborhood photos, drone footage, resident reviews and local insights to see if the homes for sale are right for you.</p>
+        </div>
+        <div class="root_houses">
+            <div class="houses__items">
+
+                <div class="houses__items-item">
+                    <div class="house__content">
+                        <div class="house__content--header">
+                            <h5>Marthandam</h5>
+                            <h2>House for sale</h2>
+                        </div>
+                        <div class="house__content--footer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, porro?</p>
+                            <a href="">view more</a>
+                        </div>
+                    </div>
+                    <img src="{{ url_for('static', filename="images/houses/house002.jpg") }}" alt="yashnil house">
+                </div>
+
+                <div class="houses__items-item">
+                    <div class="house__content">
+                        <div class="house__content--header">
+                            <h5>Marthandam</h5>
+                            <h2>House for sale</h2>
+                        </div>
+                        <div class="house__content--footer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, porro?</p>
+                            <a href="">view more</a>
+                        </div>
+                    </div>
+                    <img src="{{ url_for('static', filename="images/houses/house003.jpg") }}" alt="yashnil house">
+                </div>
+
+                <div class="houses__items-item">
+                    <div class="house__content">
+                        <div class="house__content--header">
+                            <h5>Marthandam</h5>
+                            <h2>House for sale</h2>
+                        </div>
+                        <div class="house__content--footer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, porro?</p>
+                            <a href="">view more</a>
+                        </div>
+                    </div>
+                    <img src="{{ url_for('static', filename="images/houses/house004.jpg") }}" alt="yashnil house">
+                </div>
+
+                <div class="houses__items-item">
+                    <div class="house__content">
+                        <div class="house__content--header">
+                            <h5>Marthandam</h5>
+                            <h2>House for sale</h2>
+                        </div>
+                        <div class="house__content--footer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, porro?</p>
+                            <a href="">view more</a>
+                        </div>
+                    </div>
+                    <img src="{{ url_for('static', filename="images/houses/house005.jpg") }}" alt="yashnil house">
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,12 @@
+.footer_container {
+    background-color: $primary-color;
+    width: 100%;
+    padding: 5em 0;
+    color: $text-color;
+    
+    .footer_container--sub {
+        width: 1200px;
+        margin: 0 auto;
+
+    }
+}

@@ -1,0 +1,95 @@
+.root_home {
+
+    .slider_container {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+
+        @import 'slider';
+    }
+
+    .root_about {
+        width: 1200px;
+        padding: 5em 0;
+        margin: 0 auto;
+
+        h2 {
+
+        }
+
+        p {
+            
+        }
+    }
+
+    .root_houses {
+        width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 5em;
+
+        .houses__items {
+            display: flex;
+            justify-content: space-between;
+
+            &-item {
+                width: 285px;
+                height: 425px;
+                overflow: hidden;
+                position: relative;
+                border-radius: 10px;
+                transition: all .2s;
+
+                .house__content {
+                    position: absolute;
+                    z-index: 10;
+                    padding: 1em;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: rgba(0, 0, 0, 0.178);
+                    height: 100%;
+
+                    &--header {
+
+                        h5 {
+                            margin: 0;
+                            padding-bottom: .5em;
+                        }
+                    }
+
+                    &--footer {
+
+                        p {
+                            margin: 0;
+                            background: none;
+                        }
+
+                        a {
+                            background-color: $axillary-color;
+                            padding: .5em 1em;
+                            color: $text-color;
+                            display: inline-block;
+
+                            &:hover {
+                                background-color: $secondary-color;
+                            }
+                        }
+                    }
+                }
+
+                img {
+                    background-position: center;
+                    transition: all .2s;
+                    height: 100%;
+                }
+
+                &:hover {
+
+                    img {
+                        transform: scale(1.25);
+                    }
+                }
+            }
+        }
+    }
+}

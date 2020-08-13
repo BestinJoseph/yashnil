@@ -1,0 +1,41 @@
+<div class="navigation_container">
+    <div class="navigation_sub">
+        <div class="navigation_sub--left">
+            <div class="navigation_logo">
+                <a href="{{ url_for('root_blueprint.root_home') }}"><h2>Yashnil</h2></a>
+            </div>
+            <div class="navigation_menu">
+                <ul>
+                    <a href="{{ url_for('house_blueprint.house_home') }}"><li>houses</li></a>
+                    <a href=""><li>Services</li></a>
+                    <a href=""><li>about</li></a>
+                    <a href=""><li>contact</li></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navigation_sub--right">
+            <p>advertisements</p>
+        </div>
+    </div>
+</div>
+
+{% block scripts %}
+
+    <script>
+        const navBar = document.querySelector('.navigation_container')
+
+        window.onscroll = function () {
+            let top = window.scrollY
+
+            if(top >= 200 ) {
+                navBar.style.height = '75px';
+                navBar.style.backgroundColor = '#232f3e';
+            } else {
+                navBar.style.height = '100px';
+                navBar.style.backgroundColor = 'transparent';
+            }
+        }
+    </script>
+
+{% endblock scripts %}

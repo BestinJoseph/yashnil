@@ -1,0 +1,76 @@
+.house_container {
+    height: 1000px;
+    width: 100vw;
+    background-color: rgba(128, 128, 128, 0.158);
+
+    &--sub {
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 150px;
+        // background-color: rgba(128, 128, 128, 0.486);
+
+        .house__header {
+            margin-bottom: 2em;
+        }
+
+        .house__houses {
+
+            &--items {
+                display: flex;
+                flex-wrap: wrap;
+
+                .houses__item {
+                    width: 275px;
+                    height: 425px;
+                    background-color: burlywood;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    position: relative;
+                    cursor: pointer;
+                    margin-right: 2em;
+
+                    img {
+                        background-position: center;
+                        height: 100%;
+                        transition: all .2s;
+                    }
+
+                    .house__content {
+                        position: absolute;
+                        padding: 1em;
+                        background-color: rgba(0, 0, 0, 0.24);
+                        height: 393px;
+                        color: $text-color;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        z-index: 8;
+
+                        h5 {
+                            margin: 0;
+                        }
+
+                        p {
+                            background: none;
+                        }
+
+                        a {
+                            color: $text-color;
+                        }
+                    }
+
+                    &:hover {
+
+                        img {
+                            transform: scale(1.25);
+                        }
+                    }
+
+                    &:nth-child(4n) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
